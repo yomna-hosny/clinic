@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="clinic" Class="clinicDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-BM02\SQLEXPRESS;Initial Catalog=clinic;Integrated Security=True" SettingsObjectName="clinic_system.Properties.Settings" SettingsPropertyName="clinicConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.check_up" Member="check_ups">
+    <Type Name="check_up">
+      <Column Name="Cid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tybe" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="start_from" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="end_to" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="nots" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Did" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Pid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="case_mul" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="cost" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="done" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="weight" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Association Name="check_up_check_up_treatment" Member="check_up_treatments" ThisKey="Cid" OtherKey="Cid" Type="check_up_treatment" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[check-up_lx]" Member="check_up_lxes">
+    <Type Name="check_up_lx">
+      <Column Name="Cid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Oid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OOid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[check-up_treatment]" Member="check_up_treatments">
+    <Type Name="check_up_treatment">
+      <Column Name="Cid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TTid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="dose" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="duration" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="check_up_check_up_treatment" Member="check_up" ThisKey="Cid" OtherKey="Cid" Type="check_up" IsForeignKey="true" />
+      <Association Name="treatment_check_up_treatment" Member="treatment" ThisKey="TTid" OtherKey="TTid" Type="treatment" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.doctor" Member="doctors">
+    <Type Name="doctor">
+      <Column Name="Did" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Dname" Type="System.String" DbType="NVarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="Dphone_number" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Dspecialization" Type="System.String" DbType="NVarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="Dnew_book_cost" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="Dquick_book_cost" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="Drebook_cost" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="Dwork_from" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Dwork_to" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Ddate_of_start_work" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="logId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="daysOfWork" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="login_doctor" Member="login" ThisKey="logId" OtherKey="logId" Type="login" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.login" Member="logins">
+    <Type Name="login">
+      <Column Name="logId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="userName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="type" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="login_doctor" Member="doctors" ThisKey="logId" OtherKey="logId" Type="doctor" />
+      <Association Name="login_secretary" Member="secretaries" ThisKey="logId" OtherKey="logId" Type="secretary" />
+    </Type>
+  </Table>
+  <Table Name="dbo.organization" Member="organizations">
+    <Type Name="organization">
+      <Column Name="Oid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="org_name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="tybe" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="OOid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="address" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="phoneNUMBER" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="rays_lab_organization" Member="rays_lab" ThisKey="OOid" OtherKey="OOid" Type="rays_lab" IsForeignKey="true" />
+      <Association Name="rays_lab_organization1" Member="rays_lab1" ThisKey="OOid" OtherKey="OOid" Type="rays_lab" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.patient" Member="patients">
+    <Type Name="patient">
+      <Column Name="Pid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="phone_number" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="da8t" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="suger" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="virus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="surgery" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.rays_labs" Member="rays_labs">
+    <Type Name="rays_lab">
+      <Column Name="OOid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="org_lx_name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="type" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Association Name="rays_lab_organization" Member="organizations" ThisKey="OOid" OtherKey="OOid" Type="organization" />
+      <Association Name="rays_lab_organization1" Member="organizations1" ThisKey="OOid" OtherKey="OOid" Type="organization" />
+    </Type>
+  </Table>
+  <Table Name="dbo.secretary" Member="secretaries">
+    <Type Name="secretary">
+      <Column Name="Sid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Sname" Type="System.String" DbType="NVarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="Sphone_number" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Swork_from" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Swork_to" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Sdate_of_start_work" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="logId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="daysOfWork" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="login_secretary" Member="login" ThisKey="logId" OtherKey="logId" Type="login" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.treatment" Member="treatments">
+    <Type Name="treatment">
+      <Column Name="TTid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="treatment_name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="treatment_check_up_treatment" Member="check_up_treatments" ThisKey="TTid" OtherKey="TTid" Type="check_up_treatment" />
+    </Type>
+  </Table>
+</Database>

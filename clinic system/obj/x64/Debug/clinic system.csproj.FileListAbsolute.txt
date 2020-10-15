@@ -1,0 +1,38 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\bin\x64\Debug\clinic system.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\bin\x64\Debug\clinic system.exe.manifest
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\bin\x64\Debug\clinic system.application
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\bin\x64\Debug\clinic system.exe
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\bin\x64\Debug\clinic system.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\bin\x64\Debug\SimpleTCP.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.forms.bookingDocumentaion.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.forms.bookingDocumentationByDoctor.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.forms.bookingDocumentationByPatient.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.forms.healthDocumentaionByName.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.forms.healthDocumentation.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.forms.homeadm.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.forms.homesec.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.forms.labsXrays.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.forms.homedoc.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.forms.login2.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.forms.patientDocument.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.forms.patientDocumentByDoctor.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.forms.patientDocumentByName.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.forms.ro4ta.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.forms.testRo4ta.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.linqModifyDoctor.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.Properties.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.userControls.admin_secrts.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.userControls.amdin_doctor.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.userControls.booking.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.userControls.bookingDocumentsSec.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.userControls.doctorLabs.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.userControls.doctorMasterPage.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.userControls.doctorXray.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.userControls.healthDoc.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.userControls.patientDocuments_admin.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic_system.userControls.sec_total_booking_mony.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic system.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic system.exe.manifest
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic system.application
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic system.exe
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\12-9-2019\clinic system\clinic system\obj\x64\Debug\clinic system.pdb
